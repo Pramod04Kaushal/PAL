@@ -1,0 +1,31 @@
+/* ==========================================
+   Logo
+========================================== */
+
+.logo {
+
+    display: block;
+
+    object-fit: contain;
+
+    user-select: none;
+
+}
+
+.logo-small {
+
+    height: 40px;
+
+}
+
+.logo-medium {
+
+    height: 55px;
+
+}
+
+.logo-large {
+
+    height: 72px;
+
+}

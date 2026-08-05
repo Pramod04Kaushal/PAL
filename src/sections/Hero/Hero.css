@@ -1,0 +1,96 @@
+.hero {
+
+    padding-top: calc(var(--header-height) + var(--space-13));
+    padding-bottom: var(--space-13);
+
+}
+
+.hero-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-12);
+
+}
+
+.hero-text {
+
+    flex: 1;
+
+}
+
+.hero-badge {
+
+    display: inline-block;
+
+    padding: var(--space-2) var(--space-5);
+
+    border-radius: var(--radius-pill);
+
+    background: var(--primary);
+
+    color: #fff;
+
+    font-size: var(--fs-sm);
+
+    font-weight: var(--fw-medium);
+
+    margin-bottom: var(--space-5);
+
+}
+
+.hero h1 {
+
+    font-size: var(--fs-6xl);
+
+    line-height: var(--lh-tight);
+
+    font-weight: var(--fw-bold);
+
+    margin-bottom: var(--space-6);
+
+}
+
+.hero p {
+
+    max-width: 600px;
+
+    color: var(--text-secondary);
+
+    margin-bottom: var(--space-8);
+
+    line-height: var(--lh-loose);
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: var(--space-4);
+
+}
+
+.hero-image {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 500px;
+
+    border-radius: var(--radius-xl);
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border);
+
+}

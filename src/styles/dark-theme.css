@@ -1,0 +1,31 @@
+/* ==========================================
+   DARK THEME
+========================================== */
+
+body.theme-dark {
+
+    /* Brand */
+    --primary: #00B8D9;
+    --primary-hover: #0097B2;
+    --secondary: #00E5A8;
+
+    /* Background */
+    --bg: #05080F;
+    --bg-secondary: #0D1117;
+    --bg-card: #111827;
+    --bg-glass: rgba(17, 24, 39, 0.75);
+
+    /* Text */
+    --text: #FFFFFF;
+    --text-secondary: #B8C1CC;
+    --text-muted: #8B95A5;
+
+    /* Border */
+    --border: rgba(255, 255, 255, .08);
+
+    /* Status */
+    --success: #22C55E;
+    --warning: #FACC15;
+    --danger: #EF4444;
+
+}

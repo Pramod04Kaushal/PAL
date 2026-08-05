@@ -1,0 +1,31 @@
+/* ==========================================
+   LIGHT THEME
+========================================== */
+
+body.theme-light {
+
+    /* Brand */
+    --primary: #008BB5;
+    --primary-hover: #007299;
+    --secondary: #009E73;
+
+    /* Background */
+    --bg: #F7F9FB;
+    --bg-secondary: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-glass: rgba(255, 255, 255, .85);
+
+    /* Text */
+    --text: #111827;
+    --text-secondary: #4B5563;
+    --text-muted: #6B7280;
+
+    /* Border */
+    --border: rgba(0, 0, 0, .08);
+
+    /* Status */
+    --success: #16A34A;
+    --warning: #CA8A04;
+    --danger: #DC2626;
+
+}

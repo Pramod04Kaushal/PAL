@@ -1,0 +1,127 @@
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: var(--space-2);
+
+    border: none;
+
+    border-radius: var(--radius-pill);
+
+    font-family: var(--font-primary);
+
+    font-weight: var(--fw-semibold);
+
+    cursor: pointer;
+
+    transition: all var(--transition);
+
+}
+
+/* ======================
+   Sizes
+====================== */
+
+.btn-small {
+
+    padding: 10px 20px;
+
+    font-size: var(--fs-sm);
+
+}
+
+.btn-medium {
+
+    padding: 14px 30px;
+
+    font-size: var(--fs-md);
+
+}
+
+.btn-large {
+
+    padding: 18px 40px;
+
+    font-size: var(--fs-lg);
+
+}
+
+/* ======================
+   Primary
+====================== */
+
+.btn-primary {
+
+    background: var(--primary);
+
+    color: #fff;
+
+}
+
+.btn-primary:hover {
+
+    background: var(--primary-hover);
+
+    transform: translateY(-2px);
+
+}
+
+/* ======================
+   Outline
+====================== */
+
+.btn-outline {
+
+    background: transparent;
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+
+}
+
+.btn-outline:hover {
+
+    border-color: var(--primary);
+
+    color: var(--primary);
+
+}
+
+/* ======================
+   Ghost
+====================== */
+
+.btn-ghost {
+
+    background: transparent;
+
+    color: var(--text);
+
+}
+
+.btn-ghost:hover {
+
+    color: var(--primary);
+
+}
+
+/* ======================
+   Disabled
+====================== */
+
+.btn:disabled {
+
+    opacity: .6;
+
+    cursor: not-allowed;
+
+}
