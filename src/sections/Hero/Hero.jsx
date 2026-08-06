@@ -1,4 +1,4 @@
-import Container from "../../components/common/Container/Container";
+import Container from "../../components/ui/Container/Container";
 import Button from "../../components/ui/Button/Button";
 
 import "./Hero.css";

@@ -1,0 +1,61 @@
+.fish {
+    padding: var(--space-13) 0;
+}
+
+.fish-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: var(--space-8);
+}
+
+.fish-card {
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    overflow: hidden;
+
+    transition: .3s;
+
+}
+
+.fish-image {
+
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-secondary);
+
+    color: var(--text-secondary);
+
+}
+
+.fish-info {
+
+    padding: var(--space-6);
+
+}
+
+.fish-info h3 {
+
+    margin-bottom: var(--space-3);
+
+    color: var(--text);
+
+}
+
+.fish-info p {
+
+    color: var(--text-secondary);
+
+    line-height: 1.6;
+
+}

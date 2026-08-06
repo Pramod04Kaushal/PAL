@@ -1,0 +1,226 @@
+.fish-card {
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    transition: .35s ease;
+
+}
+
+.fish-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: rgba(0, 139, 181, .35);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .12),
+        0 0 0 1px rgba(0, 139, 181, .10);
+
+}
+
+.fish-card {
+    position: relative;
+}
+
+.fish-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    border: 2px solid transparent;
+
+    transition: .3s;
+
+    pointer-events: none;
+}
+
+.fish-card:hover::after {
+
+    border-color: rgba(0, 139, 181, .25);
+
+}
+
+.fish-image {
+    position: relative;
+
+    aspect-ratio: 4 / 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: linear-gradient(135deg,
+            rgba(0, 139, 181, .10),
+            rgba(0, 139, 181, .20));
+}
+
+.fish-image::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, .25),
+            transparent 60%);
+
+    opacity: 0;
+
+    transition: .35s;
+}
+
+.fish-card:hover .fish-image::before {
+    opacity: 1;
+}
+
+.fish-image-text {
+    transition: transform .35s ease,
+        opacity .35s ease;
+}
+
+.fish-card:hover .fish-image-text {
+    transform: scale(1.08);
+    opacity: .85;
+}
+
+.fish-info {
+    padding: var(--space-6);
+}
+
+.fish-category {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 16px;
+
+    margin-bottom: var(--space-4);
+
+    background: rgba(0, 139, 181, .12);
+
+    color: var(--primary);
+
+    border-radius: 999px;
+
+    font-size: var(--fs-xs);
+
+    font-weight: 600;
+
+    width: fit-content;
+}
+
+.fish-category {
+    transition: all .3s ease;
+}
+
+.fish-card:hover .fish-category {
+    background: var(--primary);
+    color: white;
+}
+
+.fish-info h3 {
+    margin-bottom: var(--space-3);
+
+    color: var(--text);
+}
+
+.fish-info p {
+    color: var(--text-secondary);
+
+    line-height: 1.7;
+}
+
+.fish-button {
+
+    margin-top: var(--space-5);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: none;
+
+    border: none;
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.fish-button:hover {
+
+    color: var(--primary-dark);
+
+    gap: 14px;
+
+}
+
+.fish-name {
+
+    margin: 18px 0 12px;
+
+    font-size: var(--fs-xl);
+
+    color: var(--text);
+
+}
+
+.fish-description {
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+}
+
+.fish-status {
+
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    padding: 8px 14px;
+
+    background: rgba(22, 163, 74, .92);
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    border-radius: 999px;
+
+    backdrop-filter: blur(10px);
+
+    z-index: 5;
+
+}
+
+.fish-arrow {
+    transition: transform .3s ease;
+}
+
+.fish-card:hover .fish-arrow {
+    transform: translateX(6px);
+}
