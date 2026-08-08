@@ -1,0 +1,40 @@
+.process {
+
+    padding: var(--space-13) 0;
+
+}
+
+.process-grid {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: var(--space-8);
+
+}
+
+.process-grid::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 78px;
+
+    left: 13%;
+
+    right: 13%;
+
+    height: 2px;
+
+    background: linear-gradient(to right,
+            rgba(0, 139, 181, .15),
+            rgba(0, 139, 181, .35),
+            rgba(0, 139, 181, .15));
+
+    z-index: 0;
+
+}

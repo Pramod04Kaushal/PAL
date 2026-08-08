@@ -1,0 +1,13 @@
+.why-choose {
+    padding: var(--space-13) 0;
+}
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-10);
+
+}

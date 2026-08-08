@@ -1,0 +1,75 @@
+.feature-card {
+
+    padding: 40px 32px;
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    transition: .35s ease;
+
+}
+
+.feature-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: rgba(0, 139, 181, .25);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, .10);
+
+}
+
+.feature-icon {
+
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(0, 139, 181, .10);
+
+    color: var(--primary);
+
+    transition: .35s;
+
+}
+
+.feature-card:hover .feature-icon {
+
+    background: var(--primary);
+
+    color: white;
+
+    transform: scale(1.08);
+
+}
+
+.feature-title {
+
+    margin-bottom: 16px;
+
+    color: var(--text);
+
+    font-size: var(--fs-xl);
+
+}
+
+.feature-description {
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+}
