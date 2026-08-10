@@ -35,11 +35,7 @@ function GalleryPreview() {
 
                 </div>
 
-                <div className="gallery-action">
-                    <Button variant="primary" size="medium">
-                        View Full Gallery
-                    </Button>
-                </div>
+
 
 
 

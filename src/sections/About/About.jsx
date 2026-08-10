@@ -3,7 +3,6 @@ import Container from "../../components/ui/Container/Container";
 import Button from "../../components/ui/Button/Button";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
-
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 function About() {
@@ -48,7 +47,7 @@ function About() {
 
                             <div className="about-feature">
                                 <CheckCircle2 className="about-feature-icon" />
-                                Premonium Quality
+                                Premium Quality
                             </div>
 
                             <div className="about-feature">
@@ -62,7 +61,6 @@ function About() {
                             </div>
 
                         </div>
-
 
                         <div className="about-buttons">
 

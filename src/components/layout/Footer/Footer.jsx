@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
+import {
+    Phone,
+    Mail,
+    MapPin,
+    Clock3,
+} from "lucide-react";
+
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaYoutube,
+    FaWhatsapp,
+} from "react-icons/fa";
+
 const quickLinks = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
@@ -50,35 +64,47 @@ function Footer() {
                         <div className="footer-socials">
 
                             <a
-                                href="#"
+                                href="https://www.facebook.com/profile.php?id=61556134812388"
                                 className="footer-social"
                                 aria-label="Facebook"
+                                data-label="Facebook"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                f
+                                <FaFacebookF size={18} />
                             </a>
 
                             <a
                                 href="#"
                                 className="footer-social"
                                 aria-label="Instagram"
+                                data-label="Instagram"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                ig
+                                <FaInstagram size={18} />
                             </a>
 
                             <a
                                 href="#"
                                 className="footer-social"
                                 aria-label="YouTube"
+                                data-label="YouTube"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                ▶
+                                <FaYoutube size={18} />
                             </a>
 
                             <a
-                                href="#"
+                                href="+94760769334"
                                 className="footer-social"
                                 aria-label="WhatsApp"
+                                data-label="WhatsApp"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                wa
+                                <FaWhatsapp size={18} />
                             </a>
 
                         </div>
@@ -138,15 +164,15 @@ function Footer() {
                         <div className="footer-contact-item">
 
                             <div className="footer-contact-icon">
-                                ☎
+                                <Phone size={18} />
                             </div>
 
                             <div>
 
                                 <span>Call Us</span>
 
-                                <a href="tel:+94771234567">
-                                    +94 77 123 4567
+                                <a href="tel:+94760769334">
+                                    +94 76 076 9334
                                 </a>
 
                             </div>
@@ -158,15 +184,15 @@ function Footer() {
                         <div className="footer-contact-item">
 
                             <div className="footer-contact-icon">
-                                @
+                                <Mail size={18} />
                             </div>
 
                             <div>
 
                                 <span>Email Us</span>
 
-                                <a href="mailto:info@palfishfarm.lk">
-                                    info@palfishfarm.lk
+                                <a href="mailto:contact.palservice@gmail.com">
+                                    contact.palservice@gmail.com
                                 </a>
 
                             </div>
@@ -178,16 +204,16 @@ function Footer() {
                         <div className="footer-contact-item">
 
                             <div className="footer-contact-icon">
-                                ◉
+                                <MapPin size={18} />
                             </div>
 
                             <div>
 
                                 <span>Visit Us</span>
 
-                                <p>
-                                    Kurunegala, Sri Lanka
-                                </p>
+                                <a href="https://maps.app.goo.gl/ztNsXC4seWsqoeeF8">
+                                    Negombo, Sri Lanka
+                                </a>
 
                             </div>
 
@@ -198,7 +224,7 @@ function Footer() {
                         <div className="footer-contact-item">
 
                             <div className="footer-contact-icon">
-                                ◷
+                                <Clock3 size={18} />
                             </div>
 
                             <div>
@@ -206,12 +232,22 @@ function Footer() {
                                 <span>Working Hours</span>
 
                                 <p>
-                                    Mon - Sun : 8:00 AM - 6:00 PM
+                                    Mon - Sat : 8:00 AM - 6:00 PM
                                 </p>
 
                             </div>
 
                         </div>
+
+                        <a
+                            href="https://maps.app.goo.gl/ztNsXC4seWsqoeeF8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="footer-map"
+                        >
+                            <MapPin size={18} />
+                            <span>View on Google Maps</span>
+                        </a>
 
                     </div>
 
@@ -229,13 +265,7 @@ function Footer() {
                         © 2026 PAL Fish Farm. All Rights Reserved.
                     </p>
 
-                    <p>
-                        Designed with
-                        <span className="footer-heart">
-                            {" "}♥{" "}
-                        </span>
-                        for Quality Fish Farming
-                    </p>
+
 
                 </div>
 

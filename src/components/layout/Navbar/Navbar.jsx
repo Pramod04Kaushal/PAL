@@ -1,11 +1,49 @@
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 import Logo from "../../ui/Logo/Logo";
 import ThemeToggle from "../../ui/ThemeToggle/ThemeToggle";
 
 function Navbar() {
+
+    const [activeSection, setActiveSection] = useState("home");
+
+    useEffect(() => {
+
+        const sections = document.querySelectorAll("section[id]");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+
+                });
+
+            },
+            {
+                rootMargin: "-120px 0px -55% 0px",
+                threshold: 0,
+            }
+        );
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+
+        return () => {
+            sections.forEach((section) => {
+                observer.unobserve(section);
+            });
+        };
+
+    }, []);
+
     return (
         <header className="navbar">
+
             <div className="container navbar-container">
 
                 <div className="navbar-logo">
@@ -14,65 +52,76 @@ function Navbar() {
 
                 <nav className="navbar-links">
 
-                    <NavLink
-                        to="/"
-                        className={({ isActive }) => isActive ? "active" : ""}
+                    <a
+                        href="#home"
+                        className={activeSection === "home" ? "active" : ""}
                     >
                         Home
-                    </NavLink>
+                    </a>
 
-                    <NavLink
-                        to="/about"
-                        className={({ isActive }) => isActive ? "active" : ""}
+                    <a
+                        href="#about"
+                        className={activeSection === "about" ? "active" : ""}
                     >
                         About Us
-                    </NavLink>
+                    </a>
 
-                    <NavLink
-                        to="/fish"
-                        className={({ isActive }) => isActive ? "active" : ""}
+                    <a
+                        href="#fish"
+                        className={activeSection === "fish" ? "active" : ""}
                     >
                         Our Fish
-                    </NavLink>
+                    </a>
 
-                    <NavLink
-                        to="/services"
-                        className={({ isActive }) => isActive ? "active" : ""}
+                    <a
+                        href="#services"
+                        className={activeSection === "services" ? "active" : ""}
                     >
                         Services
-                    </NavLink>
+                    </a>
 
-                    <NavLink
-                        to="/gallery"
-                        className={({ isActive }) => isActive ? "active" : ""}
+                    <a
+                        href="#gallery"
+                        className={activeSection === "gallery" ? "active" : ""}
                     >
                         Gallery
-                    </NavLink>
+                    </a>
 
-                    <NavLink
-                        to="/blog"
-                        className={({ isActive }) => isActive ? "active" : ""}
-                    >
+                    <a href="#blog">
                         Blog
-                    </NavLink>
+                    </a>
 
-                    <NavLink
-                        to="/contact"
-                        className={({ isActive }) => isActive ? "active" : ""}
+                    <a
+                        href="#"
+                        className={
+                            activeSection === "contact"
+                                ? "active"
+                                : ""
+                        }
+                        onClick={(e) => {
+
+                            e.preventDefault();
+
+                            setActiveSection("contact");
+
+                            window.scrollTo({
+                                top: document.documentElement.scrollHeight,
+                                behavior: "smooth",
+                            });
+
+                        }}
                     >
                         Contact
-                    </NavLink>
+                    </a>
 
                 </nav>
 
                 <div className="navbar-right">
-
                     <ThemeToggle />
-
                 </div>
 
-
             </div>
+
         </header>
     );
 }

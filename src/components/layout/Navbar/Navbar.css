@@ -16,7 +16,7 @@
 
     z-index: var(--z-fixed);
 
-    background: transparent;
+    background: var(--bg);
 
     color: var(--text);
 

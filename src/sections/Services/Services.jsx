@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import Container from "../../components/ui/Container/Container";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
-import Button from "../../components/ui/Button/Button";
 
 import {
     Fish,
@@ -21,7 +20,7 @@ function Services() {
 
             <Container>
 
-                {/* Hero */}
+                {/* Services Header */}
                 <div className="services-hero">
 
                     <SectionHeader
@@ -150,96 +149,11 @@ function Services() {
                             healthy fish and suitable aquarium conditions.
                         </p>
 
-                        <a href="/contact">
+                        <Link to="/contact">
                             Contact Us →
-                        </a>
+                        </Link>
 
                     </div>
-
-                </div>
-
-
-                {/* Service Highlight */}
-                <div className="services-highlight">
-
-                    <div className="services-highlight-image">
-                        <span>
-                            Service Image
-                        </span>
-                    </div>
-
-                    <div className="services-highlight-content">
-
-                        <span className="services-highlight-badge">
-                            Why Choose Our Services
-                        </span>
-
-                        <h2>
-                            Quality Care From Farm to Customer
-                        </h2>
-
-                        <p>
-                            At PAL Fish Farm, every stage is handled with
-                            care. From breeding and fish selection to
-                            preparation and delivery, we focus on maintaining
-                            quality and healthy fish.
-                        </p>
-
-                        <div className="services-features">
-
-                            <div>
-                                <span>✓</span>
-                                Healthy Fish
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Professional Care
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Quality Selection
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Reliable Service
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                {/* CTA */}
-                <div className="services-cta">
-
-                    <div>
-
-                        <span className="services-cta-badge">
-                            Need Quality Fish?
-                        </span>
-
-                        <h2>
-                            Let's Find the Right Fish for You
-                        </h2>
-
-                        <p>
-                            Contact PAL Fish Farm and discover our
-                            available freshwater fish and services.
-                        </p>
-
-                    </div>
-
-                    <Button
-                        variant="primary"
-                        size="medium"
-                    >
-                        Contact Us
-                    </Button>
 
                 </div>
 

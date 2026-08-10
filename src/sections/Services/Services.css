@@ -2,10 +2,8 @@
    SERVICES PAGE
 ========================================================== */
 
-.services-page {
-
-    padding: var(--space-10) 0 var(--space-13);
-
+.services {
+    padding: var(--space-5) 0;
 }
 
 
@@ -173,180 +171,14 @@
 }
 
 
-/* ==========================================================
-   SERVICE HIGHLIGHT
-========================================================== */
 
-.services-highlight {
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: var(--space-12);
-
-    align-items: center;
-
-    margin-top: var(--space-13);
-
-}
-
-
-/* ==========================================================
-   HIGHLIGHT IMAGE
-========================================================== */
-
-.services-highlight-image {
-
-    min-height: 430px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: var(--radius-lg);
-
-    background:
-        linear-gradient(135deg,
-            rgba(0, 184, 217, .12),
-            rgba(0, 184, 217, .03));
-
-    border: 1px solid var(--border);
-
-    color: var(--text-secondary);
-
-    font-size: var(--fs-lg);
-
-    font-weight: var(--fw-medium);
-
-}
-
-
-/* ==========================================================
-   HIGHLIGHT CONTENT
-========================================================== */
-
-.services-highlight-content {
-
-    padding: var(--space-5);
-
-}
-
-.services-highlight-badge {
-
-    display: inline-block;
-
-    padding: var(--space-2) var(--space-5);
-
-    margin-bottom: var(--space-5);
-
-    border-radius: var(--radius-pill);
-
-    background: var(--primary);
-
-    color: #FFFFFF;
-
-    font-size: var(--fs-sm);
-
-    font-weight: var(--fw-medium);
-
-}
-
-.services-highlight-content h2 {
-
-    max-width: 550px;
-
-    margin-bottom: var(--space-5);
-
-    font-size: var(--fs-4xl);
-
-    line-height: var(--lh-tight);
-
-    font-weight: var(--fw-bold);
-
-    color: var(--text);
-
-}
-
-.services-highlight-content p {
-
-    max-width: 560px;
-
-    margin-bottom: var(--space-6);
-
-    color: var(--text-secondary);
-
-    font-size: var(--fs-md);
-
-    line-height: var(--lh-loose);
-
-}
-
-
-/* ==========================================================
-   FEATURES
-========================================================== */
-
-.services-features {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: var(--space-4);
-
-}
-
-.services-features div {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: var(--space-3);
-
-    color: var(--text);
-
-    font-size: var(--fs-sm);
-
-    font-weight: var(--fw-semibold);
-
-}
-
-.services-features span {
-
-    width: 28px;
-
-    height: 28px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    border-radius: 50%;
-
-    background: rgba(0, 184, 217, .10);
-
-    color: var(--primary);
-
-    font-size: var(--fs-xs);
-
-}
 
 
 /* ==========================================================
    CTA
 ========================================================== */
 
-.services-cta {
+.cta-section {
 
     display: flex;
 
@@ -450,35 +282,6 @@
 
         grid-template-columns:
             repeat(2, 1fr);
-
-    }
-
-    .services-highlight {
-
-        grid-template-columns:
-            1fr;
-
-        gap: var(--space-7);
-
-    }
-
-    .services-highlight-image {
-
-        min-height: 380px;
-
-    }
-
-    .services-highlight-content {
-
-        padding: 0;
-
-    }
-
-    .services-cta {
-
-        align-items: flex-start;
-
-        flex-direction: column;
 
     }
 

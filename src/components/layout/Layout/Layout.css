@@ -1,9 +1,7 @@
-/* ==========================================
-   Layout
-========================================== */
-
 main {
-
     padding-top: var(--header-height);
+}
 
+section {
+    scroll-margin-top: var(--header-height);
 }

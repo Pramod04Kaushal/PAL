@@ -1,5 +1,5 @@
 .gallery-preview {
-    padding: var(--space-13) 0;
+    padding: var(--space-4) 0 var(--space-13);
 }
 
 .gallery-grid {
