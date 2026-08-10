@@ -5,6 +5,7 @@ import WhyChoose from "../../sections/WhyChoose/WhyChoose";
 import Process from "../../sections/Process/Process";
 import Stats from "../../sections/Stats/Stats";
 import GalleryPreview from "../../sections/GalleryPreview/GalleryPreview";
+import ServicesSection from "../../sections/Services/Services";
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <Process />
             <Stats />
             <GalleryPreview />
+            <ServicesSection />
         </>
     );
 }

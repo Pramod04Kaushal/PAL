@@ -1,0 +1,489 @@
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer {
+
+    background: #07131A;
+
+    color: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* ==========================================================
+   MAIN FOOTER
+========================================================== */
+
+.footer-main {
+
+    padding: var(--space-11) 0 var(--space-9);
+
+    position: relative;
+
+}
+
+.footer-main::after {
+
+    content: "PAL";
+
+    position: absolute;
+
+    right: -40px;
+
+    bottom: -80px;
+
+    font-size: 220px;
+
+    font-weight: var(--fw-bold);
+
+    color: rgba(0, 184, 217, .025);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns:
+        1.45fr 1fr 1fr 1.35fr;
+
+    gap: var(--space-9);
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+/* ==========================================================
+   BRAND
+========================================================== */
+
+.footer-brand {
+
+    max-width: 340px;
+
+}
+
+.footer-logo {
+
+    display: inline-flex;
+
+    flex-direction: column;
+
+    margin-bottom: var(--space-5);
+
+}
+
+.footer-logo-main {
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    font-weight: var(--fw-bold);
+
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+
+}
+
+.footer-logo-sub {
+
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    font-weight: var(--fw-semibold);
+
+    letter-spacing: 4px;
+
+    color: var(--primary);
+
+}
+
+.footer-description {
+
+    max-width: 310px;
+
+    color: #AAB7C1;
+
+    font-size: var(--fs-sm);
+
+    line-height: 1.7;
+
+    margin-bottom: var(--space-5);
+
+}
+
+
+/* ==========================================================
+   SOCIAL
+========================================================== */
+
+.footer-socials {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-3);
+
+}
+
+.footer-social {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .04);
+
+    color: #FFFFFF;
+
+    font-size: var(--fs-sm);
+
+    font-weight: var(--fw-semibold);
+
+    transition: all var(--transition);
+
+}
+
+.footer-social:hover {
+
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+    color: #FFFFFF;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   COLUMNS
+========================================================== */
+
+.footer-column h3 {
+
+    margin-bottom: var(--space-6);
+
+    font-size: var(--fs-md);
+
+    font-weight: var(--fw-semibold);
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color: #FFFFFF;
+
+}
+
+.footer-column h3::after {
+
+    content: "";
+
+    display: block;
+
+    width: 30px;
+
+    height: 2px;
+
+    margin-top: 10px;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--primary);
+
+}
+
+.footer-column ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-3);
+
+}
+
+.footer-column li a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #AAB7C1;
+
+    font-size: var(--fs-sm);
+
+    transition: all var(--transition);
+
+}
+
+.footer-column li a span {
+
+    color: var(--primary);
+
+    opacity: 0;
+
+    transform: translateX(-5px);
+
+    transition: all var(--transition);
+
+}
+
+.footer-column li a:hover {
+
+    color: var(--primary);
+
+    transform: translateX(3px);
+
+}
+
+.footer-column li a:hover span {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+/* ==========================================================
+   CONTACT
+========================================================== */
+
+.footer-contact {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.footer-contact-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: var(--space-3);
+
+    margin-bottom: var(--space-4);
+
+}
+
+.footer-contact-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(0, 184, 217, .1);
+
+    border: 1px solid rgba(0, 184, 217, .2);
+
+    color: var(--primary);
+
+    font-size: var(--fs-sm);
+
+}
+
+.footer-contact-item>div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+}
+
+.footer-contact-item span {
+
+    color: #7F8D98;
+
+    font-size: var(--fs-xs);
+
+}
+
+.footer-contact-item a,
+.footer-contact-item p {
+
+    color: #D7DEE3;
+
+    font-size: var(--fs-sm);
+
+    line-height: 1.5;
+
+}
+
+.footer-contact-item a {
+
+    transition: color var(--transition);
+
+}
+
+.footer-contact-item a:hover {
+
+    color: var(--primary);
+
+}
+
+
+/* ==========================================================
+   BOTTOM BAR
+========================================================== */
+
+.footer-bottom {
+
+    border-top: 1px solid rgba(255, 255, 255, .08);
+
+}
+
+.footer-bottom-container {
+
+    min-height: 64px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-5);
+
+}
+
+.footer-bottom p {
+
+    color: #71808B;
+
+    font-size: var(--fs-xs);
+
+}
+
+.footer-heart {
+
+    color: var(--primary);
+
+    margin: 0 3px;
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1000px) {
+
+    .footer-container {
+
+        grid-template-columns:
+            1.4fr 1fr 1fr;
+
+    }
+
+    .footer-contact {
+
+        grid-column: span 3;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 700px) {
+
+    .footer-main {
+
+        padding: var(--space-10) 0 var(--space-8);
+
+    }
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: var(--space-8);
+
+    }
+
+    .footer-contact {
+
+        grid-column: auto;
+
+    }
+
+    .footer-brand {
+
+        max-width: 100%;
+
+    }
+
+    .footer-description {
+
+        max-width: 100%;
+
+    }
+
+    .footer-bottom-container {
+
+        padding-top: var(--space-5);
+
+        padding-bottom: var(--space-5);
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: var(--space-2);
+
+    }
+
+}
