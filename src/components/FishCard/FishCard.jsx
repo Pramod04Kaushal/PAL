@@ -7,12 +7,13 @@ function FishCard({ fish }) {
 
             <div className="fish-image">
 
+                <img
+                    src={fish.image}
+                    alt={fish.name}
+                />
+
                 <span className="fish-status">
                     {fish.status}
-                </span>
-
-                <span className="fish-image-text">
-                    Fish Image
                 </span>
 
             </div>

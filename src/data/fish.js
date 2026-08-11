@@ -1,3 +1,8 @@
+import bettaImage from "../assets/images/fish/betta4.jpg";
+import guppyImage from "../assets/images/fish/guppy6.jpg";
+import koiImage from "../assets/images/fish/koi.jpg";
+import goldfishImage from "../assets/images/fish/goldfish.jpg";
+
 const fishData = [
     {
         id: 1,
@@ -7,7 +12,7 @@ const fishData = [
         size: "2 - 3 Inches",
         water: "Freshwater",
         status: "Available",
-        image: ""
+        image: bettaImage
     },
 
     {
@@ -18,7 +23,7 @@ const fishData = [
         size: "1 - 2 Inches",
         water: "Freshwater",
         status: "Available",
-        image: ""
+        image: guppyImage
     },
 
     {
@@ -29,7 +34,7 @@ const fishData = [
         size: "8 - 12 Inches",
         water: "Freshwater",
         status: "Available",
-        image: ""
+        image: koiImage
     },
 
     {
@@ -40,7 +45,7 @@ const fishData = [
         size: "3 - 5 Inches",
         water: "Freshwater",
         status: "Available",
-        image: ""
+        image: goldfishImage
     }
 ];
 
