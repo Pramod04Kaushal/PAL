@@ -1,5 +1,6 @@
 import "./FishCard.css";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function FishCard({ fish }) {
     return (
@@ -33,14 +34,17 @@ function FishCard({ fish }) {
                 </p>
 
 
-                <button className="fish-button">
+                <Link
+                    to={`/fish/${fish.slug}`}
+                    className="fish-button"
+                >
                     View Details
 
                     <ArrowRight
                         size={18}
                         className="fish-arrow"
                     />
-                </button>
+                </Link>
 
             </div>
 

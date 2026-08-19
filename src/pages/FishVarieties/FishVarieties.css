@@ -1,0 +1,235 @@
+.fish-varieties {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-13);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.fish-varieties-hero {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-10);
+}
+
+.fish-varieties-hero-card {
+    position: relative;
+
+    max-width: var(--container-lg);
+    min-height: 360px;
+
+    margin-inline: auto;
+
+    overflow: hidden;
+
+    background: #000;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.fish-varieties-hero-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 360px;
+}
+
+.fish-varieties-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================
+   DARK GRADIENT OVERLAY
+========================= */
+
+.fish-varieties-hero-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0) 35%,
+            rgba(0, 0, 0, 0.10) 48%,
+            rgba(0, 0, 0, 0.40) 65%,
+            rgba(0, 0, 0, 0.78) 82%,
+            rgba(0, 0, 0, 0.90) 100%);
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   HERO INFORMATION
+========================= */
+
+.fish-varieties-hero-info {
+    position: absolute;
+
+    z-index: 2;
+
+    top: 50%;
+    right: var(--space-10);
+
+    width: 38%;
+
+    transform: translateY(-50%);
+
+    color: #ffffff;
+}
+
+.fish-varieties-category {
+    display: inline-block;
+
+    margin-bottom: var(--space-4);
+
+    padding: 8px 18px;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+}
+
+.fish-varieties-hero-info h1 {
+    margin-bottom: var(--space-3);
+
+    font-size: var(--fs-5xl);
+
+    line-height: var(--lh-tight);
+
+    color: #ffffff;
+}
+
+.fish-varieties-hero-info p {
+    max-width: 420px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: var(--fs-lg);
+
+    line-height: var(--lh-loose);
+}
+
+/* =========================
+   VARIETIES
+========================= */
+
+.fish-varieties-list {
+    max-width: var(--container-lg);
+
+    margin-inline: auto;
+
+    padding-inline: var(--space-5);
+}
+
+.fish-varieties-list h2 {
+    margin-bottom: var(--space-6);
+
+    font-size: var(--fs-3xl);
+}
+
+.fish-varieties-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: var(--space-5);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .fish-varieties-hero-card {
+        min-height: 380px;
+    }
+
+    .fish-varieties-hero-info {
+        right: var(--space-8);
+
+        width: 45%;
+    }
+
+    .fish-varieties-hero-info h1 {
+        font-size: var(--fs-4xl);
+    }
+
+    .fish-varieties-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .fish-varieties {
+        padding-top: var(--space-5);
+    }
+
+    .fish-varieties-hero {
+        padding-top: var(--space-4);
+        padding-bottom: var(--space-8);
+    }
+
+    .fish-varieties-hero-card {
+        min-height: 420px;
+    }
+
+    .fish-varieties-hero-info {
+        top: auto;
+        right: var(--space-5);
+        bottom: var(--space-6);
+
+        width: calc(100% - (var(--space-5) * 2));
+
+        transform: none;
+    }
+
+    .fish-varieties-hero-card::after {
+        background: linear-gradient(to bottom,
+                transparent 25%,
+                rgba(0, 0, 0, 0.25) 45%,
+                rgba(0, 0, 0, 0.85) 100%);
+    }
+
+    .fish-varieties-hero-info h1 {
+        font-size: var(--fs-4xl);
+    }
+
+    .fish-varieties-hero-info p {
+        font-size: var(--fs-base);
+    }
+
+    .fish-varieties-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 500px) {
+
+        .fish-varieties-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

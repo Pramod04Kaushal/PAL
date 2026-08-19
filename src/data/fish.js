@@ -7,6 +7,7 @@ const fishData = [
     {
         id: 1,
         name: "Betta Fish",
+        slug: "betta",
         category: "Freshwater",
         description: "Beautiful ornamental fish with vibrant colors.",
         size: "2 - 3 Inches",
@@ -18,6 +19,7 @@ const fishData = [
     {
         id: 2,
         name: "Guppy Fish",
+        slug: "guppy",
         category: "Freshwater",
         description: "Healthy guppies available in multiple varieties.",
         size: "1 - 2 Inches",
@@ -29,6 +31,7 @@ const fishData = [
     {
         id: 3,
         name: "Koi Fish",
+        slug: "koi",
         category: "Premium",
         description: "Premium Japanese Koi suitable for ponds.",
         size: "8 - 12 Inches",
@@ -40,6 +43,7 @@ const fishData = [
     {
         id: 4,
         name: "Goldfish",
+        slug: "goldfish",
         category: "Aquarium",
         description: "Healthy goldfish for home aquariums.",
         size: "3 - 5 Inches",
