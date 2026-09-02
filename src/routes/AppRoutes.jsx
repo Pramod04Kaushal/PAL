@@ -11,7 +11,7 @@ import FishVarieties from "../pages/FishVarieties/FishVarieties";
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/PAL">
             <Routes>
 
                 <Route element={<Layout />}>
