@@ -9,6 +9,7 @@ import Home from "../pages/Home/Home";
 
 import FishVarieties from "../pages/FishVarieties/FishVarieties";
 
+
 function AppRoutes() {
     return (
         <BrowserRouter basename="/PAL">
@@ -19,6 +20,8 @@ function AppRoutes() {
                     <Route path="/" element={<Home />} />
 
                     <Route path="/fish/:slug" element={<FishVarieties />} />
+
+
 
                 </Route>
 
