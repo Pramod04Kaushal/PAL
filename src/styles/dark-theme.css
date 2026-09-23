@@ -10,10 +10,10 @@ body.theme-dark {
     --secondary: #00E5A8;
 
     /* Background */
-    --bg: #05080F;
-    --bg-secondary: #0D1117;
-    --bg-card: #111827;
-    --bg-glass: rgba(17, 24, 39, 0.75);
+    --bg: #121212;
+    --bg-secondary: #181818;
+    --bg-card: #242424;
+    --bg-glass: rgba(36, 36, 36, 0.75);
 
     /* Text */
     --text: #FFFFFF;
