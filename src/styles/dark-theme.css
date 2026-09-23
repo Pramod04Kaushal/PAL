@@ -10,18 +10,18 @@ body.theme-dark {
     --secondary: #00E5A8;
 
     /* Background */
-    --bg: #121212;
-    --bg-secondary: #181818;
-    --bg-card: #242424;
-    --bg-glass: rgba(36, 36, 36, 0.75);
+    --bg: #0D1117;
+    --bg-secondary: #161B22;
+    --bg-card: #21262D;
+    --bg-glass: rgba(33, 38, 45, 0.75);
 
     /* Text */
-    --text: #FFFFFF;
-    --text-secondary: #B8C1CC;
-    --text-muted: #8B95A5;
-
+    /* Text */
+    --text: #F0F6FC;
+    --text-secondary: #8B949E;
+    --text-muted: #6E7681;
     /* Border */
-    --border: rgba(255, 255, 255, .08);
+    --border: rgba(240, 246, 252, 0.12);
 
     /* Status */
     --success: #22C55E;
