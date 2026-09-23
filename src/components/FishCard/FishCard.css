@@ -54,6 +54,7 @@
 .fish-image {
     position: relative;
 
+    width: 100%;
     aspect-ratio: 4 / 3;
 
     display: flex;
@@ -65,8 +66,6 @@
     background: linear-gradient(135deg,
             rgba(0, 139, 181, .10),
             rgba(0, 139, 181, .20));
-
-
 }
 
 .fish-image img {
