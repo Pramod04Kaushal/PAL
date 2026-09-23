@@ -14,20 +14,17 @@ function Hero() {
                     <div className="hero-text">
 
                         <span className="hero-badge">
-                            Premium Fish Farm
+                            PAL | Pramod Aqua Life
                         </span>
 
                         <h1>
-                            Premium Freshwater Fish
+                            Quality Freshwater Fish
                             <br />
-                            Breeding in Sri Lanka
+                            Raised With Care
                         </h1>
 
                         <p>
-                            We specialize in healthy Guppy,
-                            Betta, Koi and Aquarium Fish
-                            raised with professional care
-                            and sustainable breeding methods.
+                            Explore our collection of healthy Guppy, Betta, Koi and aquarium fish, carefully bred and raised at PAL Fish Farm in Sri Lanka.
                         </p>
 
                         <div className="hero-buttons">
