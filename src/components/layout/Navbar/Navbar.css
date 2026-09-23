@@ -7,17 +7,14 @@
     position: fixed;
 
     top: 0;
-
     left: 0;
 
     width: 100%;
-
     height: var(--header-height);
 
     z-index: var(--z-fixed);
 
     background: var(--bg);
-
     color: var(--text);
 
     transition:
@@ -31,9 +28,7 @@
     height: 100%;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
 }
@@ -41,7 +36,6 @@
 .navbar-logo {
 
     display: flex;
-
     align-items: center;
 
 }
@@ -49,7 +43,6 @@
 .navbar-links {
 
     display: flex;
-
     align-items: center;
 
     gap: var(--space-8);
@@ -63,7 +56,6 @@
     color: var(--text);
 
     font-size: var(--fs-md);
-
     font-weight: var(--fw-medium);
 
     text-decoration: none;
@@ -91,11 +83,9 @@
     position: absolute;
 
     left: 0;
-
     bottom: -8px;
 
     width: 100%;
-
     height: 2px;
 
     border-radius: var(--radius-pill);
@@ -111,5 +101,208 @@
     align-items: center;
 
     gap: var(--space-4);
+
+}
+
+
+/* ==========================================================
+   MOBILE MENU BUTTON
+========================================================== */
+
+.navbar-menu-button {
+
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    background: var(--bg-card);
+
+    color: var(--text);
+
+    transition:
+        background var(--transition),
+        border-color var(--transition);
+
+}
+
+.navbar-menu-button:hover {
+
+    border-color: var(--primary);
+
+}
+
+
+/* Hamburger lines */
+
+.navbar-menu-button span {
+
+    width: 20px;
+    height: 2px;
+
+    border-radius: var(--radius-pill);
+
+    background: currentColor;
+
+    transition:
+        transform var(--transition),
+        opacity var(--transition);
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 800px) {
+
+    .navbar-menu-button {
+
+        display: flex;
+
+    }
+
+    .navbar-right {
+
+        margin-left: auto;
+
+        gap: 10px;
+
+    }
+
+    .navbar-links {
+
+        position: absolute;
+
+        top: calc(var(--header-height) + 10px);
+
+        left: 20px;
+        right: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 4px;
+
+        padding: 10px;
+
+        background: var(--bg);
+
+        border: 1px solid var(--border);
+
+        border-radius: var(--radius-lg);
+
+        box-shadow: var(--shadow-lg);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-8px);
+
+        transition:
+            opacity var(--transition),
+            visibility var(--transition),
+            transform var(--transition);
+
+    }
+
+    .navbar-links.open {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+
+    }
+
+    .navbar-links a {
+
+        width: 100%;
+
+        padding: 14px 16px;
+
+        border-radius: var(--radius-md);
+
+    }
+
+    .navbar-links a:hover {
+
+        background: var(--bg-secondary);
+
+    }
+
+    .navbar-links a.active {
+
+        background: rgba(0, 139, 181, 0.08);
+
+    }
+
+    .navbar-links a.active::after {
+
+        display: none;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 500px) {
+
+    .navbar-links {
+
+        left: 16px;
+        right: 16px;
+
+    }
+
+    .navbar-menu-button {
+
+        width: 42px;
+        height: 42px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   HAMBURGER → CLOSE ICON
+========================================================== */
+
+.navbar-menu-button.open span:nth-child(1) {
+
+    transform: translateY(7px) rotate(45deg);
+
+}
+
+.navbar-menu-button.open span:nth-child(2) {
+
+    opacity: 0;
+
+}
+
+.navbar-menu-button.open span:nth-child(3) {
+
+    transform: translateY(-7px) rotate(-45deg);
 
 }

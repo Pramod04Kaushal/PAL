@@ -6,6 +6,7 @@ import ThemeToggle from "../../ui/ThemeToggle/ThemeToggle";
 function Navbar() {
 
     const [activeSection, setActiveSection] = useState("home");
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
 
@@ -50,11 +51,12 @@ function Navbar() {
                     <Logo />
                 </div>
 
-                <nav className="navbar-links">
+                <nav className={`navbar-links ${menuOpen ? "open" : ""}`}>
 
                     <a
                         href="#home"
                         className={activeSection === "home" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                     >
                         Home
                     </a>
@@ -62,6 +64,7 @@ function Navbar() {
                     <a
                         href="#about"
                         className={activeSection === "about" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                     >
                         About Us
                     </a>
@@ -69,6 +72,7 @@ function Navbar() {
                     <a
                         href="#fish"
                         className={activeSection === "fish" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                     >
                         Our Fish
                     </a>
@@ -76,6 +80,7 @@ function Navbar() {
                     <a
                         href="#services"
                         className={activeSection === "services" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                     >
                         Services
                     </a>
@@ -83,11 +88,13 @@ function Navbar() {
                     <a
                         href="#gallery"
                         className={activeSection === "gallery" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                     >
                         Gallery
                     </a>
 
                     <a href="#blog">
+
                         Blog
                     </a>
 
@@ -103,6 +110,7 @@ function Navbar() {
                             e.preventDefault();
 
                             setActiveSection("contact");
+                            setMenuOpen(false);
 
                             window.scrollTo({
                                 top: document.documentElement.scrollHeight,
@@ -117,7 +125,20 @@ function Navbar() {
                 </nav>
 
                 <div className="navbar-right">
+
                     <ThemeToggle />
+
+                    <button
+                        className={`navbar-menu-button ${menuOpen ? "open" : ""}`}
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        aria-label="Toggle navigation menu"
+                        aria-expanded={menuOpen}
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
                 </div>
 
             </div>
