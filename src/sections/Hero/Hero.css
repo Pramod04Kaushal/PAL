@@ -94,3 +94,193 @@
     border: 1px solid var(--border);
 
 }
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+/* ==========================================================
+   TABLET
+   1100px and below
+========================================================== */
+
+@media (max-width: 1100px) {
+
+    .hero-content {
+
+        gap: var(--space-8);
+
+    }
+
+    .hero h1 {
+
+        font-size: var(--fs-5xl);
+
+    }
+
+    .hero-image {
+
+        min-height: 420px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET / MOBILE
+   800px and below
+========================================================== */
+
+@media (max-width: 800px) {
+
+    .hero {
+
+        padding-top: var(--space-8);
+        padding-bottom: var(--space-10);
+
+    }
+
+    .hero-content {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+
+        gap: var(--space-8);
+
+    }
+
+    .hero-text {
+
+        flex: none;
+
+        width: 100%;
+
+        min-width: 0;
+
+    }
+
+    .hero h1 {
+
+        font-size: var(--fs-4xl);
+
+        line-height: var(--lh-tight);
+
+        max-width: 100%;
+
+        overflow-wrap: break-word;
+
+    }
+
+    .hero p {
+
+        max-width: 100%;
+
+    }
+
+    .hero-buttons {
+
+        flex-wrap: wrap;
+
+    }
+
+    .hero-image {
+
+        flex: none;
+
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 400px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   500px and below
+========================================================== */
+
+@media (max-width: 500px) {
+
+    .hero {
+
+        padding-top: var(--space-6);
+        padding-bottom: var(--space-8);
+
+    }
+
+    .hero-content {
+
+        gap: var(--space-6);
+
+    }
+
+    .hero-badge {
+
+        margin-bottom: var(--space-4);
+
+        padding: 7px 14px;
+
+        font-size: var(--fs-xs);
+
+    }
+
+    .hero h1 {
+
+        font-size: var(--fs-3xl);
+
+        line-height: 1.15;
+
+        margin-bottom: var(--space-4);
+
+    }
+
+    .hero p {
+
+        margin-bottom: var(--space-6);
+
+        font-size: var(--fs-sm);
+
+        line-height: var(--lh-loose);
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: var(--space-3);
+
+    }
+
+    .hero-buttons .btn {
+
+        width: 100%;
+
+    }
+
+    .hero-image {
+
+        flex: none;
+
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 280px;
+
+    }
+
+}

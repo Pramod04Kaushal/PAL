@@ -1,39 +1,97 @@
 /* ==========================================================
-   RESPONSIVE DESIGN SYSTEM
+   GLOBAL RESPONSIVE SYSTEM
 ========================================================== */
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-/* ==========================================================
-   TABLET / SMALL DESKTOP
-   1100px and below
-========================================================== */
-
-@media (max-width: 1100px) {
-
-    :root {
-        --header-height: 80px;
-    }
-
-    .container {
-        padding-inline: 24px;
-    }
-
+#root {
+    width: 100%;
+    max-width: 100%;
 }
 
 
 /* ==========================================================
    TABLET
-   800px and below
 ========================================================== */
 
-@media (max-width: 800px) {
-
-    :root {
-        --header-height: 76px;
-    }
+@media (max-width: 1024px) {
 
     .container {
-        padding-inline: 20px;
+        padding-inline: 24px;
+    }
+
+    /* HERO */
+
+    .hero-content {
+        gap: 48px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-image {
+        min-height: 420px;
+    }
+
+
+    /* ABOUT */
+
+    .about-content {
+        gap: 48px;
+    }
+
+    .about-image-placeholder {
+        height: 420px;
+    }
+
+
+    /* FISH */
+
+    .fish-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+
+    /* WHY CHOOSE */
+
+    .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+
+    /* PROCESS */
+
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .process-grid::before {
+        display: none;
+    }
+
+
+    /* STATS */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
     }
 
 }
@@ -41,17 +99,151 @@
 
 /* ==========================================================
    MOBILE
-   500px and below
 ========================================================== */
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
 
-    :root {
-        --header-height: 70px;
+    .container {
+        width: 100%;
+        padding-inline: 20px;
     }
+
+
+    /* HERO */
+
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    .hero p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+        min-height: 300px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        padding: 48px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image-placeholder {
+        width: 100%;
+        height: 320px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-buttons {
+        margin-top: 32px;
+    }
+
+
+    /* FISH */
+
+    .fish-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* WHY CHOOSE */
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* PROCESS */
+
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* STATS */
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 400px) {
 
     .container {
         padding-inline: 16px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .about-image-placeholder {
+        height: 280px;
     }
 
 }
