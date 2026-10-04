@@ -1,6 +1,6 @@
 import bettaImage from "../assets/images/fish/betta4.jpg";
 import guppyImage from "../assets/images/fish/guppy6.jpg";
-import koiImage from "../assets/images/fish/koi.jpg";
+import mollyImage from "../assets/images/fish/molly1.jpg";
 import goldfishImage from "../assets/images/fish/goldfish.jpg";
 
 const fishData = [
@@ -30,14 +30,14 @@ const fishData = [
 
     {
         id: 3,
-        name: "Koi Fish",
-        slug: "koi",
-        category: "Premium",
-        description: "Premium Japanese Koi suitable for ponds.",
-        size: "8 - 12 Inches",
+        name: "Molly Fish",
+        slug: "molly",
+        category: "Freshwater",
+        description: "Colorful and hardy freshwater fish.",
+        size: "2 - 4 Inches",
         water: "Freshwater",
         status: "Available",
-        image: koiImage
+        image: mollyImage
     },
 
     {
